@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    @variants responsive {
+
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+
+      .no-scrollbar {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+    }
+  }
+
+@font-face {
+  font-family: "NEXT ART";
+  src: url("../public/fonts/next_art/NEXT\ ART_Regular.otf");
+}
