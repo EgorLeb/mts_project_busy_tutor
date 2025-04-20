@@ -13,7 +13,7 @@ export const months_name = [
   "November",
   "December",
 ];
-export const link = "http://localhost:5100/"
+export const link = "/api/"
 
 export const errorMessagesServer = {
   404: "User not found!",

@@ -5,15 +5,16 @@ services:
     build: ./backend
     ports:
       - "5100:5100"
+    expose:
+      - "5100"
     environment:
       - FLASK_ENV=development
-    volumes:
-      - ./backend:/app
+
 
   frontend:
     build: ./frontend
     ports:
-      - "3000:3000"
+      - "3000:80"
     depends_on:
       - backend
 
